@@ -1,5 +1,6 @@
-import ToggleDarkMode from '@/components/DarkMode'
 import Link from 'next/link'
+import ToggleDarkMode from './DarkMode'
+
 export default function Nav() {
   return (
     <nav className='sticky top-0 border-b backdrop:blur-md'>
