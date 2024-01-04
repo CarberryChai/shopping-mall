@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ToggleDarkMode from './DarkMode'
+import { UserButton } from '@clerk/nextjs'
 
 export default function Nav() {
   return (
@@ -8,7 +9,10 @@ export default function Nav() {
         <Link className='font-bold' href='/'>
           Shopping Mall
         </Link>
-        <ToggleDarkMode />
+        <div className='flex gap-6 items-center'>
+          <ToggleDarkMode />
+          <UserButton afterSignOutUrl='/'></UserButton>
+        </div>
       </div>
     </nav>
   )
